@@ -1,0 +1,33 @@
+<!-- Create a webpage that has an image of a lightbulb.
+When the user clicks the lightbulb, it should be turned on, clicking it again will turn it off.
+Remember that we can user JS to change element’s attributes (like the source of an image) -->
+
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<title> Ex5_UI </title>
+		
+		<script>
+function changeImage() {
+    var image = document.getElementById('pic');
+    // var currentSrc= img.src; //everytime user clicks, set a different source for the image
+    debugger;
+    if (image.src.match("bulb_On")) {
+        image.src = "http://www.wpclipart.com/household/lights/more_lights/light_bulb_off.png";
+    } else if (image.src.match("bulb_off")) {
+        image.src = "http://www.wpclipart.com/household/lights/more_lights/light_bulb_On.png";
+    }
+
+
+
+}
+  </script>
+</head>
+<body>
+
+<img id="pic" onclick="changeImage()" src="http://www.wpclipart.com/household/lights/more_lights/light_bulb_off.png"/>
+	</body>
+
+	</html>

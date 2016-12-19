@@ -1,0 +1,153 @@
+<!-- 1. In this assignment, we will write a HPQuiz (you choose the personality test from your Java assignment)
+2. In our version we will have 5 questions, each question will use a different html input type.
+3. After the user finished answering all of the questions, analyze the answers with JavaScript and give the
+user a final score.
+4. Using Bootstrap is optional, but suggested.
+-->
+
+<!DOCTYPE html>
+<html>
+
+
+	<head>
+		<title>HPQuiz</title>
+	
+		<link rel= "stylesheet" type= "text/css" href= "./css/HP_Quiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="HP_Quiz.js"></script>
+
+
+  </head>
+
+	<body>
+<div class="jumbotron headOfPage">
+  <h1 class= titleOfPage>Welcome to the Harry Potter Quiz</h1> 
+  <p>Get ready to find out if you are a true Harry Potter fan.</p> 
+</div>
+	<div class="HP_HPQuiz">
+ 
+    <div class= "section_part1">
+      <h2 class="HPQuiz_question">Tick all the true facts.</h2>
+  	       
+           <div class="checkbox"> 
+              <label><input class="answer1" type="checkbox" value="0">A bezoar is the antidote to a love potion.</label>
+	         </div>
+
+  	       <div class="checkbox">
+  		        <label><input class="answer1" type="checkbox" value="15">Hermione's middle name is Jean.</label>
+	         </div>
+  	
+            <div class="checkbox">
+  		        <label><input class="answer1" type="checkbox" value="5">The symbol of the Griffindor house is a Lion </label>
+	           </div>
+  	
+            <div class="checkbox">
+  		        <label><input class="answer1" type="checkbox" value="10">Ron had 2 pets.</label>
+	         </div>
+              <input type="submit" class="submitMate" value="Submit" onclick="functionQuestion1();">
+
+      </div>
+
+    <div class= "section_part2">
+      <h2 class="HPQuiz_question">How many times have you read the books?</h2>
+        <form class= readBooks> <!-- DONT USE FORM -->
+            <input type="radio" class="answer2" name= "book" onclick="functionQuestion2(0);"> 0 times <br>
+            <input type="radio" class="answer2" name= "book" onclick="functionQuestion2(5);"> I think I read the first one once.<br>
+            <input type="radio" class="answer2" name= "book" onclick="functionQuestion2(10);">I've read them all!<br>
+            <input type="radio" class="answer2" name= "book" onclick="functionQuestion2(15);">I've lost count of the amout of times that I have read them all.<!-- 
+<input type="range" name="points" min="0" max="10"> or this -->
+</form>
+
+
+</div>
+
+
+  <div class= "section_part3">
+  <h2 class="HPQuiz_question">What’s your favourite food?</h2>
+<!--     <div class="dropdown">
+ -->  <!-- <button onclick="dropdownFunction()" class="dropbtn">press here to see options</button> -->
+
+<select onchange= 'functionQuestion3()'>
+<option value="" disabled selected>Select your option</option>  
+<option class= "answer3" value="15">Bertie Botts Beans</option>
+  <option class= "answer3" value="5">Anything the HouseElves make.</option>
+  <option class= "answer3" value="10"> Chocolate Frogs</option>
+  <option class= "answer3" value="0">Magic Stars</option>
+</select>
+
+
+ </div>
+
+
+
+  <div class= "section_part4">
+  <h2 class="HPQuiz_question">Which picture makes you the happiest?</h2>
+
+      <input type="image"  class= "pic" onclick="functionQuestion4(5);"  src="css/images/coding.jpg" alt="coding"/>
+      <input type="image" class= "pic" onclick="functionQuestion4(10);" src="css/images/vold.jpg" alt="Voldemort"/>
+      <input type="image" class= "pic" onclick="functionQuestion4(15);" src="css/images/harry_ron_herm.jpg" alt="HarryRonHermione"/>
+      <input type="image" class= "pic" onclick="functionQuestion4(0);" src="css/images/lordofrings.jpg" alt="Lord of the Ring"/>
+</div>
+
+
+ <div class= "section_part5">
+  <h2 class="HPQuiz_question">Do your friends like Harry Potter?</h2>
+    <div class= "friends">
+      <!-- Rounded switch -->
+
+
+
+<form action="#" method="get" class= "mates">
+
+<div class= "answer5">
+<input type="checkbox" id="switch1" name="switch1" class="switch" value= "5" />
+<label for="switch1">They don't like Harry Potter, so I won't talk about it in front of them.</label>
+</div>
+
+<div class= "answer5">
+<input type="checkbox" id="switch2" name="switch2" class="switch" value= "10" />
+<label for="switch2">No they hate Harry Potter, but that doesn't matter to me.</label>
+</div>
+<div class= "answer5"> 
+<input type="checkbox" id="switch3" name="switch3" class="switch" value= "15"/>
+<label for="switch3">Yes, but no-one loves Harry Potter like I do.</label>
+</div>
+
+<div class= "answer5"> 
+<input type="checkbox" id="switch4" name="switch4" class="switch" value= "0"/>
+<label for="switch4">No, but neither do I.</label>
+</div>
+    <!-- <input type="submit" value="Submit" onclick="finalAnswer();"> -->
+
+
+</form>
+<div class= "submitAnswer5">
+              <input type="submit" value="Submit" class= "submitMate" onclick="functionQuestion5();">
+
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="HPQuiz-result">
+<button class= "subjectFinal" type="submit" value="Submit" onclick="finalAnswer();">FINAL ANSWER</button>
+<!--   <input type="submit" value="Submit" onclick="functionQuestion5();">
+ --></div>
+</div>
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</body>
+
+	</html>

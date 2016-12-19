@@ -1,0 +1,25 @@
+.first-element {
+	background-color: coral;
+	color: green;
+	width: 100px;
+	height: 200px;
+	transition: 0.8s ease-in-out;
+}
+
+.first-element:hover{
+	background-color: aqua;
+	color: yellow;
+}
+
+.second-element {
+	background-color: salmon;
+	color: purple;
+	width: 200px;
+	height: 300px;
+	transition: 0.8s ease-in-out;
+}
+
+.second-element:hover{
+	background-color: deepskyblue;
+	color: white;
+}

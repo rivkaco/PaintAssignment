@@ -1,0 +1,232 @@
+body {
+
+background-image: url(images/HPbackground.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+}
+.headOfPage {
+	background-image: url(images/header1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.headOfPage .titleOfPage {
+	color: white;
+}
+
+
+.section_part1 .HPQuiz_question {
+	color: white;
+	font-family: sans-serif;
+margin-left: 600px;
+}
+.section_part1 {
+	border: black solid 2px;
+	background-image: url(images/facts.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: -30px;
+
+}
+.section_part1 .checkbox {
+margin-left: 600px;
+color: #ffccff;
+font-size: 25px;
+margin-top: 20px;
+}
+
+.submitMate {
+	background-color: #ffccff;
+	width: 100px;
+	height: 50px;
+	color: #395248;
+	border: none;
+	padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 12px;
+    margin-left: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.section_part2 {
+	background-image: url(images/book1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	font-size: 25px ;
+	margin-top: -20px;
+
+}
+.section_part2 .HPQuiz_question {
+	color: white;
+	font-weight: 100px;
+		margin-left: 600px;
+line-height: 100px;
+
+}
+.section_part2 .readBooks {
+	color: #ffccff;
+	font-weight: 100px;
+		margin-left: 600px;
+
+}
+input[type='radio'] {
+    transform: scale(2);
+}
+.section_part3 {
+		text-align: center;
+	border: black solid 2px;
+	background-image: url(images/header4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+		height: 300px;
+}
+.section_part3 .HPQuiz_question {
+	color: white;
+	font-family: sans-serif;
+line-height: 150px;
+}
+.section_part3 .answer3 {
+	color: black;
+	font-family: sans-serif;
+	background-color: #ffccff;
+	font-size: 25px;
+	-webkit-appearance: none;
+}
+.section_part4 {
+		text-align: center;
+	border: black solid 2px;
+	background-image: url(images/sun.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #ffccff;
+
+}
+
+.pic {
+	width: 200px;
+	height: 200px;
+}
+
+.section_part5 {
+	border: black solid 2px;
+	background-image: url(images/friends.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+		color: #ffccff;
+
+
+}
+
+.friends
+{
+	font-family: sans-serif;
+	font-weight: normal;
+	margin: 10px;
+	color: #555;
+}
+
+.mates
+{
+	margin: 40px 0 30px 500px;
+	
+
+}
+
+.answer5
+{
+	clear: both;
+	margin: 0 50px;
+		color: #ffccff;
+;
+}
+
+input.switch:empty
+{
+	margin-left: -999px;
+}
+
+input.switch:empty ~ label
+{
+	position: relative;
+	float: left;
+	line-height: 1.6em;
+	text-indent: 4em;
+	margin: 0.2em 0;
+	cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input.switch:empty ~ label:before, 
+input.switch:empty ~ label:after
+{
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+	width: 3.6em;
+	background-color: #c33;
+	border-radius: 0.3em;
+	box-shadow: inset 0 0.2em 0 rgba(0,0,0,0.3);
+	-webkit-transition: all 100ms ease-in;
+  transition: all 100ms ease-in;
+}
+
+input.switch:empty ~ label:after
+{
+	width: 1.4em;
+	top: 0.1em;
+	bottom: 0.1em;
+	margin-left: 0.1em;
+	background-color: #fff;
+	border-radius: 0.15em;
+	box-shadow: inset 0 -0.2em 0 rgba(0,0,0,0.2);
+}
+
+input.switch:checked ~ label:before
+{
+	background-color: #393;
+}
+
+input.switch:checked ~ label:after
+{
+	margin-left: 2.1em;
+}
+
+
+.HPQuiz-result {
+	margin-left: 600px;
+	
+}
+
+.subjectFinal {
+	background-color: #2B2D64;
+	width: 200px;
+	height: 100px;
+	color: #C4C5E1;
+	border: none;
+	padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+
+}
+.subjectFinal:hover{
+	background-color: #0F103D;
+	
+
+}
