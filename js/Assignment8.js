@@ -5,7 +5,7 @@ function init() {
 var BIGCLICK= 0;
 
 var selectedColour= 0;
-	var colours= ["#E32929", "pink", "#F2A140","#438861", "#6f4ac4", "white"];
+	var colours= ["#E32929", "pink", "#F2A140","#438861", "#6f4ac4", "white","salmon"];
 
 function createMenu(){
 	var menu= document.getElementById('menu');
@@ -39,12 +39,12 @@ function selectColour(e) {
 	
 function initCanvas() { 
 	var c = document.getElementById("canvas");
-	for (var i =0; i< 500; i++) {
-		for (var j= 0; j< 500; j++){
+	for (var i =0; i< 50; i++) {
+		for (var j= 0; j< 50; j++){
 			var pixel = document.createElement("div");
 			pixel.className = "pixel";
-			pixel.style.left= i + "px";
-			pixel.style.top = j + "px";
+			pixel.style.left= i*10 + "px";
+			pixel.style.top = j*10 + "px";
 			pixel.style.height = "10px";
 			pixel.style.width = "10px";
 			c.appendChild(pixel);
